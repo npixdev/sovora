@@ -1,0 +1,10 @@
+.productListItem {
+    display: inline-block;
+    list-style-type: none;
+    border-style: solid;
+    height: 300px;
+    width: 250px;
+    margin: 25px;
+    text-align: center;
+    vertical-align: top;
+}

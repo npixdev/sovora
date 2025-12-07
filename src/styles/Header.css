@@ -1,0 +1,71 @@
+h1 {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #191919;
+    color: #EEEEEE;
+    align-items: center;
+}
+
+.header a{
+    color: white;
+}
+
+.header div{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.header-title {
+    text-align: center;
+}
+
+
+
+.header-searchbar {
+    text-align: center;
+}
+
+.header-searchbar-item {
+    background-color: white;
+    gap: 5px;
+    border-radius: 50px;
+}
+
+.header-searchbar input {
+    margin-left: 5px;
+    border-style: none;
+}
+
+.header-searchbar img {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+.header-navbar ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+}
