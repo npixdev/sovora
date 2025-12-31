@@ -18,6 +18,8 @@ function Header({ search, setSearch}: {search: string, setSearch: (s: string) =>
                     <li><Link to='/products'><p>Nos montres</p></Link></li>
                     <li><Link to='/page2'><p>Custom</p></Link></li>
                     <li><Link to='/cart'><p>Panier</p></Link></li>
+                    <li><Link to='/login'><p>Login</p></Link></li>
+                    <li><Link to='/signup'><p>Sign Up</p></Link></li>
                 </ul>
             </nav>
         </nav>

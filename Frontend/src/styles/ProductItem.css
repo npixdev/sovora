@@ -1,5 +1,121 @@
 .ProductItem {
-    border-style: solid;
-    margin: 50px;
-    height: 600px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* image principale */
+.ProductItem img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* images secondaire*/
+.ProductGallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ProductGallery img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.ProductGallery img:hover {
+  border: 2px solid #000000;
+}
+
+/* Informations produit */
+.ProductInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ProductInfo h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.ProductInfo p.description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.ProductInfo p.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* container add to cart */
+.addCartContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 20px;    
+}
+
+/* Bouton Add to Cart */
+.ProductInfo button.addToCart {
+  width: 80%;
+  background-color: #8b8b8b;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ProductInfo button.addToCart:hover {
+  background-color: #252525;
+}
+
+/* quantité input */
+.quantityInput {
+  width: 60px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ProductItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ProductInfo {
+    width: 100%;
+  }
+
+  .ProductItem img {
+    max-width: 100%;
+  }
+
+  .ProductGallery {
+    justify-content: center;
+  }
 }

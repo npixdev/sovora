@@ -1,0 +1,77 @@
+/* Conteneur principal */
+.loginContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Titre */
+.loginContainer h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Formulaire */
+.loginContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* espace entre les inputs */
+}
+
+/* Inputs */
+.loginContainer input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus sur input */
+.loginContainer input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Bouton submit */
+.loginContainer button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #8b8b8b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover sur le bouton */
+.loginContainer button:hover {
+  background-color: #252525;
+}
+
+/* Placeholder un peu plus clair */
+.loginContainer input::placeholder {
+  color: #aaa;
+}
+
+/* lien login*/
+.signupLink p {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .loginContainer {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+}

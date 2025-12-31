@@ -1,0 +1,3 @@
+ALTER TABLE users
+MODIFY firstname VARCHAR(255) NULL,
+MODIFY lastname VARCHAR(255) NULL;
